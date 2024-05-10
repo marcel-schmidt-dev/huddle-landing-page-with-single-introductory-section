@@ -64,8 +64,17 @@ img {
     margin-bottom: 25px;
 }
 
+.content .left,
+.content .right {
+    width: 50%;
+}
+
 .content .right {
     padding-left: 60px;
+}
+
+.content img {
+    width: 100%;
 }
 
 .content h1 {
@@ -132,4 +141,67 @@ img {
 
 .social a:hover img {
     filter: brightness(1);
+}
+
+@media (max-width: 376px) {
+    body {
+        background-image: url("./images/bg-mobile.svg");
+        background-size: contain;
+    }
+
+    .container {
+        max-width: 305px;
+        padding-top: 40px;
+    }
+
+    .logo {
+        max-width: 120px;
+        margin-bottom: 60px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content .left,
+    .content .right {
+        width: 100%;
+    }
+
+    .content .right {
+        padding-left: 0;
+        padding-top: 60px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .content a {
+        margin: auto;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .social {
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .social a {
+        width: 28px;
+        height: 28px;
+    }
+
+    .social a img {
+        height: 14px;
+    }
 }
