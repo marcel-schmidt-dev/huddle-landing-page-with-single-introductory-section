@@ -1,0 +1,135 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url("./fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("./fonts/Poppins-SemiBold.ttf");
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+
+.attribution a {
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+body {
+    background-color: #684BB1;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./images/bg-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1275px;
+    margin: auto;
+    padding-top: 64px;
+}
+
+.logo {
+    max-width: 200px;
+    margin-bottom: 80px;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.content .right {
+    padding-left: 60px;
+}
+
+.content h1 {
+    font-family: Poppins-SemiBold;
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.content p {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.content a {
+    font-family: Poppins-Regular;
+    color: #684BB1;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    height: 55px;
+    border-radius: 100px;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content a:hover {
+    background-color: #E880E8;
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    width: auto;
+    height: 20px;
+    filter: brightness(10);
+}
+
+.social a:hover {
+    border: 1px solid #FF52C1;
+}
+
+.social a:hover img {
+    filter: brightness(1);
+}
